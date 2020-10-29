@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class Hello {
+public class HelloVO {
     String message;
     String name;
     String instanceId;
