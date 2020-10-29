@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestSchema(schemaId = "hello")
-@RequestMapping(path = "/simple", produces = MediaType.TEXT_PLAIN_VALUE)
+@RequestMapping(path = "/", produces = MediaType.TEXT_PLAIN_VALUE)
 public class HelloEndpoint implements Hello {
 
     @GetMapping(path = "/hello")
