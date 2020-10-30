@@ -11,6 +11,6 @@ public class ConsumerController {
     ConsumerService consumerService;
     @GetMapping("/msg/{user}")
     public String msg(@PathVariable("user") String user) {
-        return consumerService.msg(user);
+        return "message: " + consumerService.msg(user);
     }
 }
