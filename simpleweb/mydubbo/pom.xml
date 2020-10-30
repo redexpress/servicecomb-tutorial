@@ -8,7 +8,7 @@
 		<artifactId>simpleweb-parent</artifactId>
 		<version>0.1</version>
 	</parent>
-	<artifactId>simpleweb-math</artifactId>
+	<artifactId>mydubbo</artifactId>
 	<version>0.1</version>
 
 	<properties>
@@ -53,4 +53,3 @@
 		</plugins>
 	</build>
 </project>
-

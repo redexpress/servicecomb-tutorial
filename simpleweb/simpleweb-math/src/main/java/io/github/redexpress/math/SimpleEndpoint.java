@@ -17,8 +17,7 @@ public class SimpleEndpoint {
     }
 
     @GetMapping(path = "/sayhello/{name}")
-    public HelloVO sayHello (@PathVariable(value = "name", required = false) String name) {
-        String user = name != null ? name : "Yang";
+    public HelloVO sayHello (@PathVariable(value = "name") String name) {
         return simpleService.sayHello(name);
     }
 }
