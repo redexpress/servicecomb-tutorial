@@ -1,22 +1,24 @@
 pipeline {
-    agent {label 'master'}
+    agent {
+        docker { image 'maven:3.6.3' }
+    }
     stages {
         stage('Build') {
             steps {
                 //运行构建
-                shell "echo 'Build'"
+                sh "mvn compile"
             }
         }
         stage('Test') {
             steps {
                 //测试
-                shell "echo 'Test'"
+                sh "echo 'Test'"
             }
         }
         stage('Push') {
             steps {
                 //发布上线
-                shell "echo Push"
+                sh "echo Push"
             }
         }
     }
