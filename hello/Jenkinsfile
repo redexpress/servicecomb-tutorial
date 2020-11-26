@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 //运行构建
-                sh "mvn compile"
+                sh "cd hello && mvn compile"
             }
         }
         stage('Test') {
